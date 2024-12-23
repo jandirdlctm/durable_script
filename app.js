@@ -42,3 +42,15 @@ event.preventDefault();
 // Force navigation to the same URL every time
 window.location.href = 'https://thebeardedagents.durablesites.com/';
 });
+
+const about_us_button = document.querySelector("#\\36 766912daa11ffe6a93f4745 > div.relative.z-10.container.mx-auto.pt-8.lg\\:pt-12.pb-8.lg\\:pb-12 > div > div.flex-1.flex.flex-col.max-w-240.items-start > button")
+if (about_us_button) {
+  // Element was found
+  console.log("Element exists! We can manipulate it safely.");
+//   new_element.style.backgroundColor = "lightgreen";
+  about_us_button.classList.remove('w-full');
+  about_us_button.classList.add('w-32');
+} else {
+  // Element does not exist
+  console.warn("Element not found. Check your selector or ensure the element is in the DOM.");
+}
