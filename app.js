@@ -33,6 +33,7 @@ if (element_blog) {
     }
   });
 
+// CODE TO RELOAD PAGE EVERYTIME WE HIT THE LOGO BUTTON
 var logo_link = document.querySelector("#website-header > div > div.col-span-2.lg\\:col-span-1 > a")
 logo_link.addEventListener('click', function(event) {
 // Prevent the browser from using the current href
