@@ -6,7 +6,9 @@ const new_element = document.querySelector("#\\36 7668b4cb39ca82afeff4e37 > div 
 if (new_element) {
   // Element was found
   console.log("Element exists! We can manipulate it safely.");
-  new_element.style.backgroundColor = "lightgreen";
+//   new_element.style.backgroundColor = "lightgreen";
+  new_element.classList.remove('flex-col');
+  new_element.classList.add('flex-row');
 } else {
   // Element does not exist
   console.warn("Element not found. Check your selector or ensure the element is in the DOM.");
