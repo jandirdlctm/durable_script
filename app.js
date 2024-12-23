@@ -25,3 +25,10 @@ if (element_blog) {
     // Element does not exist
     console.warn("Element not found. Check your selector or ensure the element is in the DOM.");
   }
+
+  window.addEventListener("pageshow", function(event) {
+    // If true, the page is coming from the back-forward cache
+    if (event.persisted) {
+      window.location.reload();
+    }
+  });
