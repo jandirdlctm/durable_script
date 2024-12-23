@@ -33,16 +33,6 @@ if (element_blog) {
     }
   });
 
-  const link = document.querySelector('#myLink');
-  
-  link.addEventListener('click', function(event) {
-    // Prevent the browser from using the current href
-    event.preventDefault();
-    
-    // Force navigation to the same URL every time
-    window.location.href = 'https://same-url.com';
-  });
-
 var logo_link = document.querySelector("#website-header > div > div.col-span-2.lg\\:col-span-1 > a")
 logo_link.addEventListener('click', function(event) {
 // Prevent the browser from using the current href
