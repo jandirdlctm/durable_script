@@ -20,7 +20,7 @@ if (element_blog) {
     // Element was found
     console.log("Element exists! We can manipulate it safely.");
   //   new_element.style.backgroundColor = "lightgreen";
-    element_blog.textContent = "Events"
+    element_blog.textContent = "Upcoming Events"
   } else {
     // Element does not exist
     console.warn("Element not found. Check your selector or ensure the element is in the DOM.");
