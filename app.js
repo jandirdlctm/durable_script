@@ -41,7 +41,7 @@ logo_link.addEventListener('click', function(event) {
 event.preventDefault();
 
 // Force navigation to the same URL every time
-window.location.href = 'https://thebeardedagents24.com';
+window.location.href = 'https://thebeardedagents.com';
 });
 
 const about_us_button = document.querySelector("#\\36 766912daa11ffe6a93f4745 > div.relative.z-10.container.mx-auto.pt-8.lg\\:pt-12.pb-8.lg\\:pb-12 > div > div.flex-1.flex.flex-col.max-w-240.items-start > a")
