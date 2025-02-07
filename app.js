@@ -55,3 +55,15 @@ if (about_us_button) {
   // Element does not exist
   console.warn("Element not found. Check your selector or ensure the element is in the DOM.");
 }
+
+const services_image_1 = document.querySelector("#\\36 76dbb0e53a30563c988dbc3 > div.relative.z-10.container.mx-auto.pt-12.lg\\:pt-20.pb-12.lg\\:pb-20 > div > div > div:nth-child(1) > div > div > div > div.flex-shrink-0.relative.overflow-hidden.aspect-w-1.aspect-h-1.rounded-2xl.md\\:rounded-3xl.lg\\:rounded-4xl > span > img")
+if (services_image_1) {
+  // Element was found
+  console.log("Element exists! We can manipulate it safely.");
+//   new_element.style.backgroundColor = "lightgreen";
+  // new_element.classList.remove('flex-col');
+  services_image_1.style.backgroundColor = "Black";
+} else {
+  // Element does not exist
+  console.warn("Servuces Element1 not found. Check your selector or ensure the element is in the DOM.");
+}
