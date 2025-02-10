@@ -21,3 +21,23 @@ if (services) {
   } else {
     console.warn("Element not found. Check your selector or ensure the element is in the DOM.");
   }
+
+
+const gallery = document.querySelector("#\\36 7a7e6a0fc9ffea2925d2c7d > div.relative.z-10.w-full.pt-12.lg\\:pt-20.pb-12.lg\\:pb-20 > div > div.container.mx-auto > div > p")
+if (gallery) {
+    console.log("Element exists! We can manipulate it safely.");
+    gallery.classList.remove('body-small');
+    gallery.classList.add('body-medium');
+  } else {
+    console.warn("Element not found. Check your selector or ensure the element is in the DOM.");
+  }
+
+
+const testimonials = document.querySelector("#\\36 7a7e6a0fc9ffea2925d2c7e > div.relative.z-10.container.mx-auto.testimonials-carousel.pt-12.lg\\:pt-20.pb-12.lg\\:pb-20 > div.flex.flex-col.gap-4.max-w-5xl.mb-12.mx-auto.items-center.text-center > p")
+if (testimonials) {
+    console.log("Element exists! We can manipulate it safely.");
+    testimonials.classList.remove('body-small');
+    testimonials.classList.add('body-medium');
+  } else {
+    console.warn("Element not found. Check your selector or ensure the element is in the DOM.");
+  }
