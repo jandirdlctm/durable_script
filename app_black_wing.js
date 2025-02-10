@@ -17,7 +17,7 @@ const services = document.querySelector("#\\36 7a7e6a0fc9ffea2925d2c7c > div.rel
 if (services) {
     console.log("Element exists! We can manipulate it safely.");
     services.classList.remove('body-small');
-    services.classList.add('body-large');
+    services.classList.add('body-medium');
   } else {
     console.warn("Element not found. Check your selector or ensure the element is in the DOM.");
   }
