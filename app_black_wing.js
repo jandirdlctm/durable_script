@@ -10,3 +10,14 @@ if (new_element) {
   // Element does not exist
   console.warn("Element not found. Check your selector or ensure the element is in the DOM.");
 }
+
+
+
+const services = document.querySelector("#\\36 7a7e6a0fc9ffea2925d2c7c > div.relative.z-10.container.mx-auto.pt-16.lg\\:pt-32.pb-16.lg\\:pb-32 > div > div.flex.flex-col.gap-4.mb-6.items-start > p")
+if (services) {
+    console.log("Element exists! We can manipulate it safely.");
+    services.classList.remove('body-small');
+    services.classList.add('body-large');
+  } else {
+    console.warn("Element not found. Check your selector or ensure the element is in the DOM.");
+  }
