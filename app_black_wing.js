@@ -38,15 +38,15 @@ if (testimonials) {
     console.log("Element exists! We can manipulate it safely.");
     testimonials.classList.remove('body-small');
     testimonials.classList.add('body-medium');
-  } else {
-    console.warn("Element not found. Check your selector or ensure the element is in the DOM.");
-  }
+} else {
+  console.warn("Element not found. Check your selector or ensure the element is in the DOM.");
+}
 
-  var logo_link = document.querySelector("#website-header > div > div.hidden.lg\\:flex.item-center.justify-end.gap-10.lg\\:col-span-2 > ul.hidden.items-center.flex-wrap.lg\\:flex.justify-end.gap-x-6 > li > a")
-  logo_link.addEventListener('click', function(event) {
-    // Prevent the browser from using the current href
-    event.preventDefault();
-    
-    // Force navigation to the same URL every time
-    window.location.href = 'https://black-wing-construction.com/home-2';
-    });
+var logo_link = document.querySelector("#website-header > div > div.hidden.lg\\:flex.item-center.justify-end.gap-10.lg\\:col-span-2 > ul.hidden.items-center.flex-wrap.lg\\:flex.justify-end.gap-x-6 > li > a")
+logo_link.addEventListener('click', function(event) {
+  // Prevent the browser from using the current href
+event.preventDefault();
+  
+  // Force navigation to the same URL every time
+window.location.href = 'https://black-wing-construction.com/home-2';
+});
