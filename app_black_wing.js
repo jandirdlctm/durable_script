@@ -11,6 +11,18 @@ if (new_element) {
   console.warn("Element not found. Check your selector or ensure the element is in the DOM.");
 }
 
+const new_element_2 = document.querySelector("#\\36 7b3d822b166e5c380c15d79 > div > div.relative.z-10.container.mx-auto.px-5.md\\:px-6.transition-all.duration-300.pt-20.lg\\:pt-48.pb-20.lg\\:pb-48 > div > div > div > div")
+if (new_element_2) {
+  // Element was found
+  console.log("Element exists! We can manipulate it safely.");
+//   new_element.style.backgroundColor = "lightgreen";
+  new_element_2.classList.remove('flex-col');
+  new_element_2.classList.add('flex-row');
+} else {
+  // Element does not exist
+  console.warn("Element not found. Check your selector or ensure the element is in the DOM.");
+}
+
 
 
 const services = document.querySelector("#\\36 7a7e6a0fc9ffea2925d2c7c > div.relative.z-10.container.mx-auto.pt-16.lg\\:pt-32.pb-16.lg\\:pb-32 > div > div.flex.flex-col.gap-4.mb-6.items-start > p")
