@@ -51,9 +51,9 @@ const nav_home = document.querySelector("#website-header > div > div.hidden.lg\\
 if (nav_home) {
     console.log("Element exists!");
     // CHANGE THE TEXT
-    nav_home.textContent = "Inicio"
+    nav_home.textContent = "Inicio";
     // CHANGE HREF
-    nav_home.setAttribute("href", "https://thebeardedagents.com/home-spanish")
+    nav_home.href = "https://thebeardedagents.com/home-spanish";
 }
 else{
     console.log("Element does not exist")
