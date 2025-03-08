@@ -65,7 +65,10 @@ if (nav_services) {
     // CHANGE THE TEXT
     nav_services.textContent = "Servicios";
     // CHANGE HREF
-    nav_services.href = "https://thebeardedagents.com/services";
+    nav_services.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent default link behavior
+        window.location.href = "/services-spanish"; // Redirect
+    });
 }
 else{
     console.log("Element does not exist")
