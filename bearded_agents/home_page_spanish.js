@@ -63,9 +63,9 @@ const nav_services = document.querySelector("#website-header > div > div.hidden.
 if (nav_services) {
     console.log("Element exists!");
     // CHANGE THE TEXT
-    nav_home.textContent = "Servicios";
+    nav_services.textContent = "Servicios";
     // CHANGE HREF
-    nav_home.href = "https://thebeardedagents.com/services";
+    nav_services.href = "https://thebeardedagents.com/services";
 }
 else{
     console.log("Element does not exist")
