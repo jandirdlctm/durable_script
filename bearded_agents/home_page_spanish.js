@@ -59,6 +59,18 @@ else{
     console.log("Element does not exist")
 }
 
+const nav_home_mobile = document.querySelector("#headlessui-dialog-panel-4 > div > div.flex-1.py-6.overflow-auto > div > ul > li:nth-child(1) > a")
+if (nav_home_mobile) {
+    nav_home_mobile.textContent = "Inicio";
+    nav_home_mobile.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent default link behavior
+        window.location.href = "/home-spanish"; // Redirect
+    });
+}
+else{
+    console.log("Element does not exist")
+}
+
 const nav_services = document.querySelector("#website-header > div > div.hidden.lg\\:flex.item-center.justify-end.gap-10.lg\\:col-span-2 > ul.hidden.items-center.flex-wrap.lg\\:flex.justify-end.gap-x-6 > li:nth-child(2) > a")
 if (nav_services) {
     console.log("Element exists!");
