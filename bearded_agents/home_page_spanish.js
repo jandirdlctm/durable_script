@@ -58,3 +58,16 @@ if (nav_home) {
 else{
     console.log("Element does not exist")
 }
+
+const nav_services = document.querySelector("#website-header > div > div.hidden.lg\\:flex.item-center.justify-end.gap-10.lg\\:col-span-2 > ul.hidden.items-center.flex-wrap.lg\\:flex.justify-end.gap-x-6 > li:nth-child(2) > a")
+if (nav_services) {
+    console.log("Element exists!");
+    // CHANGE THE TEXT
+    nav_home.textContent = "Servicios";
+    // CHANGE HREF
+    nav_home.href = "https://thebeardedagents.com/services";
+}
+else{
+    console.log("Element does not exist")
+}
+
