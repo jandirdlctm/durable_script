@@ -54,7 +54,6 @@ if (nav_home) {
     nav_home.textContent = "Inicio"
     // CHANGE HREF
     nav_home.setAttribute("href", "https://thebeardedagents.com/home-spanish")
-    window.location.href = 'https://thebeardedagents.com/home-spanish';
 }
 else{
     console.log("Element does not exist")
