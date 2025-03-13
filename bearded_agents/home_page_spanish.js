@@ -96,7 +96,7 @@ new_btn.onclick = function() {
 
         if (targetElement) {  
             console.log("✅ Element is in the DOM!");
-            var home_text = document.querySelector("#headlessui-dialog-panel-4 > div > div.flex-1.py-6.overflow-auto > div > ul > li:nth-child(1) > a")
+            var home_text = document.querySelector(':is([id^="headlessui-dialog-panel-"]) > div > div.flex-1.py-6.overflow-auto > div > ul > li:nth-child(1) > a');
             home_text.textContent = "Inicio"
         } else {
             console.error("❌ Element not found in the DOM.");
@@ -104,3 +104,4 @@ new_btn.onclick = function() {
     }, 3000); // Adjust delay if necessary
 };
 
+document.querySelector("#headlessui-dialog-panel-7 > div > div.flex-1.py-6.overflow-auto")
