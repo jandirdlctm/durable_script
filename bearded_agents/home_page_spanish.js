@@ -119,7 +119,7 @@ const nav_testimonials = document.querySelector("#website-header > div > div.hid
 if (nav_testimonials) {
     console.log("Element exists!");
     // CHANGE THE TEXT
-    nav_testimonials.textContent = "Sobre Nosotros";
+    nav_testimonials.textContent = "Testimonios";
     // CHANGE HREF
     nav_testimonials.addEventListener("click", (event) => {
         event.preventDefault(); // Prevent default link behavior
@@ -134,7 +134,7 @@ const nav_contact_us = document.querySelector("#website-header > div > div.hidde
 if (nav_contact_us) {
     console.log("Element exists!");
     // CHANGE THE TEXT
-    nav_contact_us.textContent = "Sobre Nosotros";
+    nav_contact_us.textContent = "Contactenos";
     // CHANGE HREF
     nav_contact_us.addEventListener("click", (event) => {
         event.preventDefault(); // Prevent default link behavior
