@@ -114,9 +114,19 @@ new_btn.onclick = function() {
 
         if (targetElement) {  
             console.log("✅ Element is in the DOM!");
-            var home_text = document.querySelector(':is([id^="headlessui-dialog-panel-"]) > div > div.flex-1.py-6.overflow-auto > div > ul > li:nth-child(1) > a');
-            home_text.textContent = "Inicio"
-            home_text.addEventListener("click", (event) => {
+            var home_btn = document.querySelector(':is([id^="headlessui-dialog-panel-"]) > div > div.flex-1.py-6.overflow-auto > div > ul > li:nth-child(1) > a');
+            var services_btn = document.querySelector(':is([id^="headlessui-dialog-panel-"]) > div > div.flex-1.py-6.overflow-auto > div > ul > li:nth-child(2) > a');
+            var about_us_btn = document.querySelector(':is([id^="headlessui-dialog-panel-"]) > div > div.flex-1.py-6.overflow-auto > div > ul > li:nth-child(3) > a');
+            var testimonials_btn = document.querySelector(':is([id^="headlessui-dialog-panel-"]) > div > div.flex-1.py-6.overflow-auto > div > ul > li:nth-child(5) > a');
+            var contact_us_btn = document.querySelector(':is([id^="headlessui-dialog-panel-"]) > div > div.flex-1.py-6.overflow-auto > div > ul > li:nth-child(6) > a');
+            
+            home_btn.textContent = "Inicio";
+            services_btn.textContent = "Servicios";
+            about_us_btn.textContent = "Sobre Nosotros";
+            testimonials_btn.textContent = "Testimonios"
+            contact_us_btn.textContent = "Contactenos"
+
+            home_btn.addEventListener("click", (event) => {
                 event.preventDefault(); // Prevent default link behavior
                 window.location.href = "/home-spanish"; // Redirect
             });
