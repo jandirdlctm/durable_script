@@ -119,5 +119,5 @@ new_btn.onclick = function() {
         } else {
             console.error("❌ Element not found in the DOM.");
         }
-    }, 3000); // Adjust delay if necessary
+    }, 600); // Adjust delay if necessary
 };
