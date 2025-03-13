@@ -88,20 +88,36 @@ else{
 }
 
 
+// var new_btn = document.querySelector("#website-header > div > div.ml-auto.lg\\:hidden > button");
+
+// new_btn.onclick = function() {
+//     setTimeout(() => { // Delay to allow potential dynamic elements to load
+//         const targetElement = document.querySelector("#headlessui-dialog-panel-4 > div > div.flex-1.py-6.overflow-auto > div > ul");
+
+//         if (targetElement) {  
+//             console.log("✅ Element is in the DOM!");
+//             var home_text = document.querySelector(':is([id^="headlessui-dialog-panel-"]) > div > div.flex-1.py-6.overflow-auto > div > ul > li:nth-child(1) > a');
+//             home_text.textContent = "Inicio"
+//         } else {
+//             console.error("❌ Element not found in the DOM.");
+//         }
+//     }, 3000); // Adjust delay if necessary
+// };
+
+// document.querySelector("#headlessui-dialog-panel-7 > div > div.flex-1.py-6.overflow-auto")
+
 var new_btn = document.querySelector("#website-header > div > div.ml-auto.lg\\:hidden > button");
 
 new_btn.onclick = function() {
     setTimeout(() => { // Delay to allow potential dynamic elements to load
-        const targetElement = document.querySelector("#headlessui-dialog-panel-4 > div > div.flex-1.py-6.overflow-auto > div > ul");
+        const targetElement = document.querySelector('[id^="headlessui-dialog-panel-"] > div > div.flex-1.py-6.overflow-auto > div > ul');
 
         if (targetElement) {  
             console.log("✅ Element is in the DOM!");
-            var home_text = document.querySelector(':is([id^="headlessui-dialog-panel-"]) > div > div.flex-1.py-6.overflow-auto > div > ul > li:nth-child(1) > a');
-            home_text.textContent = "Inicio"
+            // var home_text = document.querySelector(':is([id^="headlessui-dialog-panel-"]) > div > div.flex-1.py-6.overflow-auto > div > ul > li:nth-child(1) > a');
+            // home_text.textContent = "Inicio"
         } else {
             console.error("❌ Element not found in the DOM.");
         }
     }, 3000); // Adjust delay if necessary
 };
-
-document.querySelector("#headlessui-dialog-panel-7 > div > div.flex-1.py-6.overflow-auto")
