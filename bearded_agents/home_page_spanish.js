@@ -47,6 +47,20 @@
 // }
 
 
+// HERO SECTION BUTTONS TO BE NEXT TO EACH OTHER ON MOBILE
+const new_element = document.querySelector("#\\36 7ca21ac241dfbd5a30ea529 > div > div.relative.z-10.container.mx-auto.px-5.md\\:px-6.transition-all.duration-300.pt-20.lg\\:pt-48.pb-20.lg\\:pb-48 > div > div > div.flex.md\\:inline-flex.flex-col.md\\:flex-row.gap-4.w-full.md\\:w-max.mt-4")
+if (new_element) {
+  // Element was found
+  console.log("Element exists! We can manipulate it safely.");
+//   new_element.style.backgroundColor = "lightgreen";
+  new_element.classList.remove('flex-col');
+  new_element.classList.add('flex-row');
+} else {
+  // Element does not exist
+  console.warn("Element not found. Check your selector or ensure the element is in the DOM.");
+}
+
+
 
 const nav_home = document.querySelector("#website-header > div > div.hidden.lg\\:flex.item-center.justify-end.gap-10.lg\\:col-span-2 > ul.hidden.items-center.flex-wrap.lg\\:flex.justify-end.gap-x-6 > li:nth-child(1) > a")
 if (nav_home) {
