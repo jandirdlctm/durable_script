@@ -116,6 +116,10 @@ new_btn.onclick = function() {
             console.log("✅ Element is in the DOM!");
             var home_text = document.querySelector(':is([id^="headlessui-dialog-panel-"]) > div > div.flex-1.py-6.overflow-auto > div > ul > li:nth-child(1) > a');
             home_text.textContent = "Inicio"
+            home_text.addEventListener("click", (event) => {
+                event.preventDefault(); // Prevent default link behavior
+                window.location.href = "/home-spanish"; // Redirect
+            });
         } else {
             console.error("❌ Element not found in the DOM.");
         }
