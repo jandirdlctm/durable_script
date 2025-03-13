@@ -61,7 +61,7 @@ if (new_element) {
 }
 
 
-
+// DESKTOP NAV TRANSLATION
 const nav_home = document.querySelector("#website-header > div > div.hidden.lg\\:flex.item-center.justify-end.gap-10.lg\\:col-span-2 > ul.hidden.items-center.flex-wrap.lg\\:flex.justify-end.gap-x-6 > li:nth-child(1) > a")
 if (nav_home) {
     nav_home.textContent = "Inicio";
@@ -74,17 +74,6 @@ else{
     console.log("Element does not exist")
 }
 
-const nav_home_mobile = document.querySelector("#headlessui-dialog-panel-4 > div > div.flex-1.py-6.overflow-auto > div > ul > li:nth-child(1) > a")
-if (nav_home_mobile) {
-    nav_home_mobile.textContent = "Inicio";
-    nav_home_mobile.addEventListener("click", (event) => {
-        event.preventDefault(); // Prevent default link behavior
-        window.location.href = "/home-spanish"; // Redirect
-    });
-}
-else{
-    console.log("Element does not exist")
-}
 
 const nav_services = document.querySelector("#website-header > div > div.hidden.lg\\:flex.item-center.justify-end.gap-10.lg\\:col-span-2 > ul.hidden.items-center.flex-wrap.lg\\:flex.justify-end.gap-x-6 > li:nth-child(2) > a")
 if (nav_services) {
@@ -101,8 +90,63 @@ else{
     console.log("Element does not exist")
 }
 
+const nav_about_us = document.querySelector("#website-header > div > div.hidden.lg\\:flex.item-center.justify-end.gap-10.lg\\:col-span-2 > ul.hidden.items-center.flex-wrap.lg\\:flex.justify-end.gap-x-6 > li:nth-child(3) > a");
+if (nav_about_us) {
+    console.log("Element exists!");
+    // CHANGE THE TEXT
+    nav_about_us.textContent = "Sobre Nosotros";
+    // CHANGE HREF
+    nav_about_us.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent default link behavior
+        window.location.href = "/about-us-spanish"; // Redirect
+    });
+}
+else{
+    console.log("Element does not exist")
+}
 
-// MOBILE
+const nav_events = document.querySelector("#website-header > div > div.hidden.lg\\:flex.item-center.justify-end.gap-10.lg\\:col-span-2 > ul.hidden.items-center.flex-wrap.lg\\:flex.justify-end.gap-x-6 > li:nth-child(4) > a")
+if (nav_events) {
+    console.log("Element exists!");
+    // CHANGE THE TEXT
+    nav_events.textContent = "Eventos";
+}
+else{
+    console.log("Element does not exist")
+}
+
+const nav_testimonials = document.querySelector("#website-header > div > div.hidden.lg\\:flex.item-center.justify-end.gap-10.lg\\:col-span-2 > ul.hidden.items-center.flex-wrap.lg\\:flex.justify-end.gap-x-6 > li:nth-child(5) > a");
+if (nav_testimonials) {
+    console.log("Element exists!");
+    // CHANGE THE TEXT
+    nav_testimonials.textContent = "Sobre Nosotros";
+    // CHANGE HREF
+    nav_testimonials.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent default link behavior
+        window.location.href = "/testimonials-spanish"; // Redirect
+    });
+}
+else{
+    console.log("Element does not exist")
+}
+
+const nav_contact_us = document.querySelector("#website-header > div > div.hidden.lg\\:flex.item-center.justify-end.gap-10.lg\\:col-span-2 > ul.hidden.items-center.flex-wrap.lg\\:flex.justify-end.gap-x-6 > li:nth-child(6) > a");
+if (nav_contact_us) {
+    console.log("Element exists!");
+    // CHANGE THE TEXT
+    nav_contact_us.textContent = "Sobre Nosotros";
+    // CHANGE HREF
+    nav_contact_us.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent default link behavior
+        window.location.href = "/contact-spanish"; // Redirect
+    });
+}
+else{
+    console.log("Element does not exist")
+}
+
+
+// MOBILE NAV TRANSLATION
 
 var new_btn = document.querySelector("#website-header > div > div.ml-auto.lg\\:hidden > button");
 
