@@ -108,7 +108,7 @@ new_btn.onclick = function() {
             home_btn.textContent = "Inicio";
             services_btn.textContent = "Servicios";
             about_us_btn.textContent = "Sobre Nosotros";
-            events_btn = "Eventos";
+            events_btn.textContent = "Eventos";
             testimonials_btn.textContent = "Testimonios"
             contact_us_btn.textContent = "Contactenos"
 
