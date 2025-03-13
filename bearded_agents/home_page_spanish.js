@@ -130,6 +130,22 @@ new_btn.onclick = function() {
                 event.preventDefault(); // Prevent default link behavior
                 window.location.href = "/home-spanish"; // Redirect
             });
+            services_btn.addEventListener("click", (event) => {
+                event.preventDefault(); // Prevent default link behavior
+                window.location.href = "/services-spanish"; // Redirect
+            });
+            about_us_btn.addEventListener("click", (event) => {
+                event.preventDefault(); // Prevent default link behavior
+                window.location.href = "/about-us-spanish"; // Redirect
+            });
+            testimonials_btn.addEventListener("click", (event) => {
+                event.preventDefault(); // Prevent default link behavior
+                window.location.href = "/testimonials-spanish"; // Redirect
+            });
+            contact_us_btn.addEventListener("click", (event) => {
+                event.preventDefault(); // Prevent default link behavior
+                window.location.href = "/contact-spanish"; // Redirect
+            });
         } else {
             console.error("❌ Element not found in the DOM.");
         }
