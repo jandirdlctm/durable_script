@@ -47,6 +47,7 @@
 // }
 
 
+
 const nav_home = document.querySelector("#website-header > div > div.hidden.lg\\:flex.item-center.justify-end.gap-10.lg\\:col-span-2 > ul.hidden.items-center.flex-wrap.lg\\:flex.justify-end.gap-x-6 > li:nth-child(1) > a")
 if (nav_home) {
     nav_home.textContent = "Inicio";
@@ -85,4 +86,19 @@ if (nav_services) {
 else{
     console.log("Element does not exist")
 }
+
+
+var new_btn = document.querySelector("#website-header > div > div.ml-auto.lg\\:hidden > button");
+
+new_btn.onclick = function() {
+    setTimeout(() => { // Delay to allow potential dynamic elements to load
+        const targetElement = document.querySelector("#headlessui-dialog-panel-4 > div > div.flex-1.py-6.overflow-auto > div > ul");
+
+        if (targetElement) {  
+            console.log("✅ Element is in the DOM!");
+        } else {
+            console.error("❌ Element not found in the DOM.");
+        }
+    }, 3000); // Adjust delay if necessary
+};
 
