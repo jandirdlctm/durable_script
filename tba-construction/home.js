@@ -1,7 +1,7 @@
 // HERO SECTION BUTTONS TO BE NEXT TO EACH OTHER ON MOBILE
 const element = document.querySelector('.flex.md\\:inline-flex.flex-col.md\\:flex-row.gap-4.w-full.md\\:w-max.mt-2.lg\\:mt-4');
                     
-if (element_blog) {
+if (element) {
   // Element was found
   console.log("Element exists! We can manipulate it safely.");
 //   new_element.style.backgroundColor = "lightgreen";
