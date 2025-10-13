@@ -54,6 +54,15 @@ if (testimonials) {
   console.warn("Element not found. Check your selector or ensure the element is in the DOM.");
 }
 
+
+const foundation_footing = document.querySelector("#\\36 7a7e6a0fc9ffea2925d2c7c > div.relative.z-10.container.mx-auto.pt-16.lg\\:pt-32.pb-16.lg\\:pb-32 > div > div.flex.flex-wrap.relative.justify-start > div:nth-child(1)")
+if (foundation_footing) {
+  console.log("Element exists! We can manipulate it safely.");
+  foundation_footing.style.display = "none";
+} else {
+console.warn("Element not found. Check your selector or ensure the element is in the DOM.");
+}
+
 var logo_link = document.querySelector("#website-header > div > div.hidden.lg\\:flex.item-center.justify-end.gap-10.lg\\:col-span-2 > ul.hidden.items-center.flex-wrap.lg\\:flex.justify-end.gap-x-6 > li > a")
 logo_link.addEventListener('click', function(event) {
   // Prevent the browser from using the current href
