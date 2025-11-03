@@ -30,7 +30,7 @@ logo_link.addEventListener('click', function(event) {
 event.preventDefault();
 
 // Force navigation to the same URL every time
-window.location.href = 'https://thebeardedagents.com';
+window.location.href = 'https://alturaholdingsgroup.com';
 });
 
 // MAKING THE ABOUT US BUTTON SMALLER ON MOBILE
